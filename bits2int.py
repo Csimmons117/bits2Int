@@ -1,46 +1,46 @@
-def bits2int():								#public static int bits2int(){
+def bits2int():								
 
-															#	int number;
-															#	int currBit;
+															
+															
 
-number = 0										#	number = 0;
+number = 0										
 currBit = 0									
 
-currBit = get_bit()						#	currBit = get_bit();
+currBit = get_bit()						
 
-while currBit != -1:					#	while (currBit != -1){
+while currBit != -1:					
 
-number = number «	1						#		number = number << 1;
+number = number «	1						
 			
-number = currBit + number 		#	number = currBit + number;// building up value
+number = currBit + number 		
 
-currBit = get_bit()						#		currBit = get_bit();//1,0
-															#	}// end of while
+currBit = get_bit()						
+															
 
-return number									#	return number;
+return number									
 
-															#}// end of bits2int
+															
 
 
-def get_bit():								#	public static int get_bit(){
+def get_bit():								
 
-user_input=input ('')					#	mips.read_c();
-															#	char x = (char) mips.retval();
+user_input=input ('')					
+															
 
-if user_input =='0'：					#	if (x == '0'){
+if user_input =='0'：					
 	
-	return 0										#		return 0;
+	return 0										
 	
-elif user_input =='1':				#	}else if(x == '1'){
+elif user_input =='1':				
 
-	return 1 										#		return 1;
+	return 1 										
 
-else:													#	}else{
+else:													
 
-	return -1										#		return -1;// error
-															# } // end of if statment
+	return -1										
+															
 
 result = bits2int()						
 
 print ("Result:", result)
-															#	}// end of get_bit
+															
