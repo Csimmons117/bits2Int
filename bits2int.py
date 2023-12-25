@@ -1,9 +1,9 @@
 def bits2int():								#public static int bits2int(){
 
-															#	int number;
-															#	int currBit;
+																							#	int number;
+																							#	int currBit;
 
-number = 0										#	number = 0;
+number = 0								     #	number = 0;
 
 currBit = 0									
 
