@@ -1,47 +1,25 @@
-def bits2int():								#public static int bits2int(){
+def get_bit():
+    x = input("Enter a binary digit (0 or 1): ")
+    
+    if x == '0':
+        return 0
+    elif x == '1':
+        return 1
+    else:
+        return -1
 
-																							#	int number;
-																							#	int currBit;
+def bits2int():
+    number = 0
+    currBit = get_bit()
+    
+    while currBit != -1:
+        number = number << 1
+        number = currBit + number
+        currBit = get_bit()
+    
+    return number
 
-number = 0								     #	number = 0;
+# Example usage:
+result = bits2int()
 
-currBit = 0									
-
-currBit = get_bit()						#	currBit = get_bit();
-
-while currBit != -1:					#	while (currBit != -1){
-
-number = number «	1						#		number = number << 1;
-			
-number = currBit + number 		#	number = currBit + number;// building up value
-
-currBit = get_bit()						#		currBit = get_bit();//1,0
-															#	}// end of while
-
-return number									#	return number;
-
-															#}// end of bits2int
-
-
-def get_bit():								#	public static int get_bit(){
-
-user_input=input ('')					#	mips.read_c();
-															#	char x = (char) mips.retval();
-
-if user_input =='0'：					#	if (x == '0'){
-	
-	return 0										#		return 0;
-	
-elif user_input =='1':				#	}else if(x == '1'){
-
-	return 1 										#		return 1;
-
-else:													#	}else{
-
-	return -1										#		return -1;// error
-															# } // end of if statment
-
-result = bits2int()						
-
-print ("Result:", result)
-															#	}// end of get_bit
+print("Result:", result)
