@@ -1,2 +1,4 @@
-# bits2Int
-This code take binary bits and converts it to numbers with base 2 
+# Bits2Int
+## Overview 
+This program is to take in a whole number and convert it to binary, in java, and python.
+
